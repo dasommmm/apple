@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="grid.css">
 </head>
 <style>
     .container{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,100px);
+        gap:10px;
 
+        /* row-gap:10px columns-gap:10px 와 같음 */
+
+        row-gap: 5px;
+        column-gap: 30px;
     }
 </style>
 <body>

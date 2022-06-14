@@ -4,94 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>iPad-Apple(KR)</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/apple.css">
 </head>
 <body>
     <header>
         <div class="header-nav">
-            <div class="hambarger"></div>
-            <div class="logo">
-                <a href="#">
-                    <figure></figure>
-                    <h1 class="hidden">apple</h1>
-                </a>
-            </div>
-            <div class="mobile-hide">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <figure class="store"></figure>
-                            <span class="hidden">스토어</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure class="mac"></figure>
-                            <span class="hidden">mac</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure class="ipad"></figure>
-                            <span class="hidden">ipad</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure class="iphone"></figure>
-                            <span class="hidden">iphone</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure class="watch"></figure>
-                            <span class="hidden">watch</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure class="airpods"></figure>
-                            <span class="hidden">airpods</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure class="tv-home"></figure>
-                            <span class="hidden">TV 및 홈</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure class="only-apple"></figure>
-                            <span class="hidden">Apple 독점 제공</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure class="acc"></figure>
-                            <span class="hidden">액세서리</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure class="support"></figure>
-                            <span class="hidden">고객지원</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure class="question"></figure>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="shopping-bag">
-                <a href="#">
-                    <figure class="bag"></figure>
-                </a>
-            </div>
+            <!-- <div class="pc-hide"></div> -->
+            <!-- <div class="logo"> -->
+            <ul>
+                <li class="pc-hide">
+                    <a href="#">
+                        <figure class="logo"></figure>
+                        <h1 class="hidden">apple</h1>
+                    </a>
+                </li>
+                <li class="mobile-hide">
+                    <a href="#">
+                        <figure class="store"></figure>
+                        <span class="hidden">스토어</span>
+                    </a>
+                </li>
+                <li class="mobile-hide">
+                    <a href="#">
+                        <figure class="mac"></figure>
+                        <span class="hidden">mac</span>
+                    </a>
+                </li>
+                <li class="mobile-hide">
+                    <a href="#">
+                        <figure class="ipad"></figure>
+                        <span class="hidden">ipad</span>
+                    </a>
+                </li>
+                <li class="mobile-hide">
+                    <a href="#">
+                        <figure class="iphone"></figure>
+                        <span class="hidden">iphone</span>
+                    </a>
+                </li>
+                <li class="mobile-hide">
+                    <a href="#">
+                        <figure class="watch"></figure>
+                        <span class="hidden">watch</span>
+                    </a>
+                </li>
+                <li class="mobile-hide">
+                    <a href="#">
+                        <figure class="airpods"></figure>
+                        <span class="hidden">airpods</span>
+                    </a>
+                </li>
+                <li class="mobile-hide">
+                    <a href="#">
+                        <figure class="tv-home"></figure>
+                        <span class="hidden">TV 및 홈</span>
+                    </a>
+                </li>
+                <li class="mobile-hide">
+                    <a href="#">
+                        <figure class="only-apple"></figure>
+                        <span class="hidden">Apple 독점 제공</span>
+                    </a>
+                </li>
+                <li class="mobile-hide">
+                    <a href="#">
+                        <figure class="acc"></figure>
+                        <span class="hidden">액세서리</span>
+                    </a>
+                </li>
+                <li class="mobile-hide">
+                    <a href="#">
+                        <figure class="support"></figure>
+                        <span class="hidden">고객지원</span>
+                    </a>
+                </li>
+                <li class="mobile-hide">
+                    <a href="#">
+                        <figure class="question"></figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure class="bag"></figure>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="capter-nav">
+        <nav class="capter-nav">
+            <!-- nav안에 ul 되는거? -->
             <ul>
                 <li>
                     <a href="#">
@@ -161,7 +163,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
     
     <main>
@@ -169,7 +171,11 @@
             <a href="#"></a>
             <div class="air-text-contents">
                 <span class="new">New</span>
-                <h2>iPad<figure class="text-air"></figure></h2>
+                <h2>
+                    iPad
+                    <span class="hiden">air</span>
+                    <figure class="text-air"></figure>
+                </h2>
                 <p>가뿐하게. 색다르게. <br>강력하게.</p>
                 <span>₩779,000부터</span>
                 <button class="buy">구입하기</button>
@@ -202,8 +208,9 @@
             <figure class="ipad-img"></figure>  
         </section>
        
-        <section class="section-ipadmini">
+        <section class="section-ipad-mini">
             <a href="#"></a>
+            <!-- z-index이용해서 a에 1 주고 text-contents엔 2줘서 더 앞으로해서 선택 안되게끔 -->
             <div class="mini-text-contents">
                 <h2>iPad<figure class="text-mini"></figure></h2>
                 <p>메가급 성능.<br>크기만 미니.</p>

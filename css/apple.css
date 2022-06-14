@@ -11,32 +11,30 @@ header{
     height: 44px;
     background-color: var(--header-background);
     overflow: hidden;
-
-
 }
-
-/* .logo a{
-    width: 14px;
-    height: 44px;
-} */
 
 
 header ul{
-    
-    max-width: 1024px;
+    /* max-width: 1024px; */
+    max-width: 980px;
+    height: 44px;
+    /* width: auto; */
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-
-   
 }
 
-.mobile-hide li{
-    padding: 0 30px;
+.header-nav{
+    margin: 0 15px;
 }
 
-.header-nav *{
-    margin-left: 3px;
+.header-nav figure{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.header-nav figure:hover{
+    opacity: 1;
 }
 
 .logo{
@@ -170,5 +168,58 @@ header ul{
 
 }
 
+.pc-hide{
+    display: none;
+    width: 29px;
+    height: 29px;
+    margin-top: 13px;
 
+}
+
+.pc-hide a::after{
+    content: '';
+    /* position: absolute; */
+    display: block;
+    height: 1px;
+    width: 17px;
+    background-color: white;
+    opacity: 0.8;
+    margin: 0 auto;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+.pc-hide a::before{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 17px;
+    background-color: white;
+    opacity: 0.8;
+    margin: 0 auto;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+.pc-hide a:hover::after{
+    opacity: 1;
+}
+
+.pc-hide a:hover::before{
+    opacity: 1;
+}
+
+/* 이거 맞나요ㅜ hover */
+
+@media screen and (max-width:833px){
+    .pc-hide{
+        display: block;
+    }
+    .mobile-hide{
+        display: none;
+    }
+    header,header ul{
+        height: 48px;
+    }
+}
 

@@ -7,6 +7,11 @@
     --font-black:#1d1d1f;
 }
 
+html{
+    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+
 header{
     /* height: 44px; */
     background-color: var(--header-background);
@@ -224,16 +229,7 @@ header ul{
     }
 }
 
-.chapter-nav{
-    overflow: hidden;
-    height: 141px;
-    background-color: black;
-}
 
-.chapter-nav ul{
-    display: flex;
-    
-}
 
 .nav-padpro{
     background-image: url(../apple-img/ipadpro_dark__175htbn6m76u_large.svg);
@@ -242,3 +238,157 @@ header ul{
     width: 41px;
     height: 54px;
 }
+
+.nav-padair{
+    background-image: url(../apple-img/ipadair_dark__gi1t1iqta1yu_large.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 54px;
+    width: 30px;
+    height: 54px;
+
+}
+
+
+.nav-ipad{
+    background-image: url(../apple-img/ipad_dark__fe8ocv9hktim_large.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 54px;
+    width: 30px;
+    height: 54px;
+}
+
+.nav-mini{
+    background-image: url(../apple-img/ipadmini_dark__cdfcygd422uu_large.svg);
+    background-repeat: no-repeat;
+    background-size: 23px 54px;
+    width: 23px;
+    height: 54px;
+}
+
+.nav-compare{
+    background-image: url(../apple-img/ipad_compare_dark__cxllw9w1tuy6_large.svg);
+    background-repeat: no-repeat;
+    background-size: 45px 54px;
+    width: 45px;
+    height: 54px;
+
+}
+
+.nav-pencil{
+    background-image: url(../apple-img/apple_pencil_dark__c42qcvi9e802_large.svg);
+    background-repeat: no-repeat;
+    background-size:3px 54px ;
+    width: 3px;
+    height: 54px;
+}
+
+.nav-keyboard{
+    background-image: url(../apple-img/keyboard_dark__dtedyad0xnqu_large.svg) ;
+    background-repeat: no-repeat;
+    background-size: 63px 54px;
+    width: 63px;
+    height: 54px;
+}
+
+.nav-airpods{
+    background-image: url(../apple-img/airpods_dark__ccoezo86z37m_large.svg);
+    background-repeat: no-repeat;
+    background-size: 27px 54px;
+    width: 27px;
+    height: 54px;
+}
+
+.nav-acc{
+    background-image: url(../apple-img/ipad_acc_dark__bo0a4ftei9au_large.svg) ;
+    background-repeat: no-repeat;
+    background-size: 31px 54px;
+    width: 31px;
+    height: 54px;
+}
+
+.nav-ipados{
+    background-image: url(../apple-img/ipados_dark__emr7k8pfle4i_large.svg) ;
+    background-repeat: no-repeat;
+    background-size: 32px 54px ;
+    width: 32px ;
+    height: 54px;
+}
+
+.nav-ipadshopping{
+    background-image: url(../apple-img/shop_ipad_dark__ekfl60g78g4m_large.svg) ;
+    background-repeat: no-repeat;
+    background-size: 66px 54px;
+    width: 66px;
+    height: 54px;
+}
+
+.chapter-nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    height: 100px;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+
+.chapter-nav ul{
+    display: flex;
+    padding: 0 34px;
+    margin: 0 auto;
+    max-width: 1000px;
+    /* 줄였을때 고정 어떻게 하나요 */
+}
+
+.chapter-nav li{
+    display: flex;
+    /* align-items: center; */
+    padding: 0 15px;
+    position: relative;
+
+}
+
+.chapter-nav li:hover span{ 
+    color: var(--button-color);
+}
+
+.chapter-nav li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chapter-nav figure{
+    margin-bottom: 7px;
+}
+
+.chapter-nav span{
+    color: #f5f5f7;
+    font-size: 12px;
+    /* 글씨 크기 다른 이유 뭘까요? */
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+    transition: 0.3s;
+}
+
+.chapter-nav .new{
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 27px;
+    /* 이렇게 위치 조정 맞나요ㅜ */
+    font-size: 10px;
+    color: var(--new-color);
+}
+
+
+
+
+
+
+

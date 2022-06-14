@@ -8,13 +8,13 @@
 }
 
 header{
-    height: 44px;
+    /* height: 44px; */
     background-color: var(--header-background);
-    overflow: hidden;
 }
 
 
 header ul{
+    overflow: hidden;
     /* max-width: 1024px; */
     max-width: 980px;
     height: 44px;
@@ -156,6 +156,7 @@ header ul{
     background-position: center center;
     width: 15px;
     height: 88px;
+    /* 이거 삐져나온거 어떻게 하나요 */
 }
 
 .bag{
@@ -223,3 +224,21 @@ header ul{
     }
 }
 
+.chapter-nav{
+    overflow: hidden;
+    height: 141px;
+    background-color: black;
+}
+
+.chapter-nav ul{
+    display: flex;
+    
+}
+
+.nav-padpro{
+    background-image: url(../apple-img/ipadpro_dark__175htbn6m76u_large.svg);
+    background-repeat: no-repeat;
+    background-size: 41px 54px;
+    width: 41px;
+    height: 54px;
+}

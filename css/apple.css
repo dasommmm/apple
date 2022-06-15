@@ -339,7 +339,7 @@ header ul{
     display: flex;
     padding: 0 34px;
     margin: 0 auto;
-    max-width: 1000px;
+    width: 1000px;
     /* 줄였을때 고정 어떻게 하나요 */
 }
 

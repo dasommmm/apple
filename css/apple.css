@@ -36,6 +36,8 @@ header ul{
 .header-nav figure{
     opacity: 0.8;
     transition: 0.3s;
+    padding: 0 8px;
+    /* padding 주면 선택할 수 있는 영역 넓힐 수 있음!! 옆에 여백에 커서 둬도 선택되게 */
 }
 
 .header-nav figure:hover{
@@ -158,10 +160,14 @@ header ul{
     background-image: url(../apple-img/globalnav_search_image__cbllq1gkias2_large.svg);
     background-size: 15px 88px ;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 0;
+    /* x값 y값, y는 위아래라서 고정 */
     width: 15px;
-    height: 88px;
+    height: 44px;
     /* 이거 삐져나온거 어떻게 하나요 */
+    /* height 44로 바꾸고 포지션을 줘서 위에 돋보기만 나오게함
+     만약 패딩을 준다면 패딩만큼 다르게 줘야해서 (패딩8이라서)
+     8px이렇게 주거나 걍 center로 해주면 됨 */
 }
 
 .bag{
@@ -189,7 +195,7 @@ header ul{
     height: 1px;
     width: 17px;
     background-color: white;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     margin: 0 auto;
     margin-top: 5px;
     transition: 0.5s;
@@ -201,17 +207,26 @@ header ul{
     height: 1px;
     width: 17px;
     background-color: white;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     margin: 0 auto;
     margin-top: 5px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
-.pc-hide a:hover::after{
+/* .pc-hide a:hover::after{
     opacity: 1;
 }
 
 .pc-hide a:hover::before{
+    opacity: 1;
+} */
+
+.pc-hide a{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.pc-hide a:hover{
     opacity: 1;
 }
 
@@ -339,7 +354,7 @@ header ul{
     display: flex;
     padding: 0 34px;
     margin: 0 auto;
-    width: 1000px;
+    /* width: 1000px; */
     /* 줄였을때 고정 어떻게 하나요 */
 }
 
@@ -348,6 +363,8 @@ header ul{
     /* align-items: center; */
     padding: 0 15px;
     position: relative;
+    flex-shrink: 0;
+    /* 글씨가 밀리는거 방지 li가 플렉스라서 화면이 줄면 박스가 줄어든다 그걸 방지하려고 슈링크*/
 
 }
 
@@ -356,13 +373,20 @@ header ul{
 }
 
 .chapter-nav li a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    display: block;
+    
+   
 }
+
+/* flex 남발하지말고 가운데 정렬을 위한거면 margin 0 auto */
 
 .chapter-nav figure{
     margin-bottom: 7px;
+    margin: 0 auto;
+
 }
 
 .chapter-nav span{
@@ -379,8 +403,10 @@ header ul{
 .chapter-nav .new{
     display: block;
     position: absolute;
-    bottom: 10px;
-    right: 27px;
+    bottom: 18px;
+    /* right: 27px; */
+    left: 50%;
+    transform: translateX(-50%);
     /* 이렇게 위치 조정 맞나요ㅜ */
     font-size: 10px;
     color: var(--new-color);

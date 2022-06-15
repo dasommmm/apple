@@ -338,11 +338,12 @@ header ul{
 }
 
 .chapter-nav{
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* 여기에 플렉스 안줘도 돼 막 쓰지 말기 오히려 헷갈려짐 */
     padding-top: 8px;
     padding-bottom: 8px;
-    text-align: center;
     height: 100px;
     overflow: hidden;
     background-color: black;
@@ -352,9 +353,11 @@ header ul{
 
 .chapter-nav ul{
     display: flex;
+    justify-content: space-between;
+    /* center 말고 between주면 줄여도 앞에 딱 고정할수있어 */
     padding: 0 34px;
     margin: 0 auto;
-    /* width: 1000px; */
+    width: 950px;
     /* 줄였을때 고정 어떻게 하나요 */
 }
 
@@ -377,6 +380,7 @@ header ul{
     /* flex-direction: column; */
     /* align-items: center; */
     display: block;
+    text-align: center;
     
    
 }
@@ -403,7 +407,7 @@ header ul{
 .chapter-nav .new{
     display: block;
     position: absolute;
-    bottom: 18px;
+    bottom: -8px;
     /* right: 27px; */
     left: 50%;
     transform: translateX(-50%);
@@ -412,6 +416,95 @@ header ul{
     color: var(--new-color);
 }
 
+/* 메인에 회색해서 마진바텀으로 주고 섹션 색 흰색 */
+/* figure감싼 div를 줄여서 text위로 붙게하고 오버플로우 안줘서 그냥 넘치게 둠 */
+
+.section-ipadair{
+    background-color: black;
+    padding-top: 68px;
+    padding-bottom: 66px;
+
+}
+
+.section-ipadair-wrapper{
+    width: 100%;
+    /* height: 695px; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    
+}
+
+.air-text-contents{
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 245px;
+    height: 260px;
+
+
+}
+
+.air-text-contents span{
+    font-size: 17PX;
+    color: #ffffff;
+}
+
+.air-text-contents h2{
+    font-size: 56px;
+    color: #ffffff;
+}
+
+.air-text-contents p:nth-of-type(2){
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.buy{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 600;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background: #0071e3;
+    color: #fff;
+}
+
+
+.text-air{
+    background-image: url(../apple-img/air_script__coyet2g7gkia_large.png);
+    background-repeat: no-repeat;
+    background-size: 88px 46px;
+    width: 88px;
+    height: 46px;
+    display: inline-block;
+}
+
+.air-img{
+    background-image: url(../apple-img/ipad_air__d794tkovmk02_large.jpg);
+    background-repeat: no-repeat;
+    background-size: 680px 695px;
+    width: 680px;
+    height: 695px;
+    flex-basis: 75%;
+}
+
+
+.new{
+    display: block;
+    position: absolute;
+    font-size: 10px;
+    color: var(--new-color);
+}
 
 
 

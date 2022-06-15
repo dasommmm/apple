@@ -167,20 +167,22 @@
         </nav>
 
         <section class="section-ipadair">
-            <a href="#"></a>
-            <div class="air-text-contents">
-                <span class="new">New</span>
-                <h2>
-                    iPad
-                    <span class="hidden">air</span>
-                    <figure class="text-air"></figure>
-                </h2>
-                <p>가뿐하게. 색다르게. <br>강력하게.</p>
-                <span>₩779,000부터</span>
-                <button class="buy">구입하기</button>
-                <a href="#">더 알아보기 &gt;</a>
+            <div class="section-ipadair-wrapper">
+                <a href="#"></a>
+                <div class="air-text-contents">
+                    <p class="new">New</p>
+                    <h2>
+                        iPad
+                        <span class="hidden">air</span>
+                        <figure class="text-air"></figure>
+                    </h2>
+                    <p>가뿐하게. 색다르게. <br>강력하게.</p>
+                    <span>₩779,000부터</span>
+                    <button class="buy">구입하기</button>
+                    <a href="#">더 알아보기 &gt;</a>
+                </div>
+                <figure class="air-img"></figure>
             </div>
-            <figure class="air-img"></figure>
         </section>
         
         <section class="section-ipadpro">
@@ -209,7 +211,8 @@
        
         <section class="section-ipad-mini">
             <a href="#"></a>
-            <!-- z-index이용해서 a에 1 주고 text-contents엔 2줘서 더 앞으로해서 선택 안되게끔 -->
+            <!-- z-index이용해서 a에 1 주고 text-contents엔 2줘서 (2가 더 앞)더 앞으로해서 선택 안되게끔 -->
+            <!-- z-index 안되면 relative해야함 -->
             <div class="mini-text-contents">
                 <h2>iPad<figure class="text-mini"></figure></h2>
                 <p>메가급 성능.<br>크기만 미니.</p>

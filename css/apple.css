@@ -419,26 +419,40 @@ header ul{
 /* 메인에 회색해서 마진바텀으로 주고 섹션 색 흰색 */
 /* figure감싼 div를 줄여서 text위로 붙게하고 오버플로우 안줘서 그냥 넘치게 둠 */
 
+.main{
+    background-color: var(--back-gray);
+}
+
 .section-ipadair{
     background-color: black;
     padding-top: 68px;
     padding-bottom: 66px;
-    box-sizing: border-box;
+    position: relative;
     
 }
 
 .section-ipadair-wrapper{
     /* width: 100%; */
-    /* height: 695px; */
     display: flex;
+    /* flex-direction: row; */
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
     width: 980px;
     margin: 0 auto;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     
+}
+
+.section-ipadair .a-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }
 
 .air-text-contents{
@@ -446,7 +460,7 @@ header ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-shrink: 1;
+    flex-shrink: 0;
     align-items: center;
     width: 245px;
     height: 260px;
@@ -505,6 +519,12 @@ header ul{
     /* 글씨와 간격 없애려면? */
 }
 
+/* .air-img-contents{
+    display: flex;
+    flex-wrap: wrap;
+
+} */
+
 .air-img{
     background-image: url(../apple-img/ipad_air__d794tkovmk02_large.jpg);
     background-repeat: no-repeat;
@@ -512,7 +532,7 @@ header ul{
     width: 680px;
     height: 695px;
     flex-basis: 75%;
-   
+
 }
 
 
@@ -550,14 +570,19 @@ header ul{
 }
 
 @media screen and (max-width:1068px) {
+    .section-ipadair{
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
     .section-ipadair-wrapper{
-        margin: 0 auto;
-        /* padding: 0 100px; */
-        /* display: flex; */
-        /* align-items: center; */
+        /* margin: 0 auto; */
+        width: 692px;
+        /* width해줘야해 */
+        margin-left: auto;
+        margin-right: auto;
     }
     .air-text-contents{
-       
+       flex-basis: 30%;
     }
     .air-img{
         background-image: url(../apple-img/ipad_air__d794tkovmk02_medium.jpg);
@@ -565,10 +590,9 @@ header ul{
         height: 515px;
         background-size: 504px 515px;
         background-repeat: no-repeat;
-        /* left: 50%; */
-        /* transform: translateX(-50%); */
-        /* position: absolute; */
-
+        flex-basis: 70%;
+       
+    
     }
     .text-air{
         background-image: url(../apple-img/air_script__coyet2g7gkia_medium.png);
@@ -576,7 +600,7 @@ header ul{
         height: 40px;
         background-size: 74px 40px;
         background-repeat: no-repeat;
-        flex-basis: 70%;
+    
     }
 }
 

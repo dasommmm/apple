@@ -429,6 +429,7 @@ main{
     padding-bottom: 66px;
     position: relative;
     margin-bottom: 13px;
+    overflow: hidden;
 }
 
 .section-ipadair-wrapper{
@@ -549,7 +550,7 @@ main{
     color: #2997ff;
     /* position: relative; */
     /* left: -5px; */
-    /* 미묘하게 가운데 안돼서 이렇게 해도 되나요 */
+    /* 미묘하게 가운데 안돼서 이렇게 해도 되나요 노노 */
 }
 
 .more-a::after{
@@ -567,7 +568,8 @@ main{
     position: relative;
     /* right: -12px; */
     top: -2px;
-    /* 미묘하게 가운데 정렬 안돼요ㅠㅠ */
+    /* 미묘하게 가운데 정렬 안돼요ㅠㅠ
+    position relative로 하면 a안에 들어감 그다음 탑으로 위치조정 */
     
 }
 
@@ -643,11 +645,13 @@ main{
     }
 }
 
-.section-ipadpro{
+#section-ipadpro{
     margin-top: 10px;
     background-color: white;
     position: relative;
-    /* a태그에 absolute줘서 부모에 relative */
+    overflow: hidden;
+    /* hidden사진 안삐져나오게 */
+    /* a태그에 absolute줘서 부모인 여기에 relative */
 }
 
 .section-ipadpro-wrapper{
@@ -658,9 +662,11 @@ main{
     margin: 0 auto;
 }
 
-
-.pro-text-contents-wrapper{
+.pro-text-contents{
+    flex-basis: 26%;
+    max-width: 26%;
     margin-top: -125px;
+    overflow: hidden;
     line-height: 1.3;
     letter-spacing: -0.03em;
     /* text-align: center; */
@@ -668,14 +674,15 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    /* 위에 이상한 여백 생겨요ㅜㅜ 마진탑ㅜㅜ */
+    z-index: 2;
 }
 
-.pro-text-contents{
-    flex-basis: 26%;
-    max-width: 26%;
-    display: flex;
-}
+/* .pro-text-contents-wrapper{
+    
+} */
+
+
 
 .pro-text-contents h2{
     font-size: 56px;
@@ -685,7 +692,7 @@ main{
 }
 
 .pro-text-contents p:first-of-type{
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 600;
 }
 
@@ -712,6 +719,38 @@ main{
     background-repeat: no-repeat;
     margin-left: 30%;
 }
+
+@media screen and (max-width:1068px) {
+    .pro-img-contents{
+        max-width: 33%;
+        flex-basis: 33%;
+    }
+    .pro-img{
+        background-image: url(../apple-img/ipad_pro_hero__bh3eq6sqfjw2_medium.jpg);
+        width: 831px;
+        height: 430px;
+        background-size: 831px 430px;
+        background-repeat: no-repeat;
+    }
+    .section-ipadpro-wrapper{
+        width: 692px;
+        margin: 0 auto;
+    }
+    .pro-text-contents{
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        max-width: 33%;
+        flex-basis: 33%;
+    }
+}
+
+@media screen and (max-width:734px) {
+    .section-ipadair-wrapper
+}
+
+
+/* 언더에 스크롤바 안생기게 못하나요 */
 
 
 

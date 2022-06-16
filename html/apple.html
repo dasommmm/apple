@@ -166,18 +166,18 @@
             </ul>
         </nav>
 
-        <section class="section-ipadair">
-            <div class="section-ipadair-wrapper">
+        <section id="section-ipadair">
+            <div class="section-ipadair-wrapper row">
                 <a href="#" class="a-link"></a>
                 <div class="air-text-contents">
                     <p class="new">New</p>
-                    <h2>
+                    <h2 class="title white">
                         iPad
                         <span class="hidden">air</span>
                         <figure class="text-air"></figure>
                     </h2>
-                    <p>가뿐하게. 색다르게. <br>강력하게.</p>
-                    <span class="price">₩779,000부터</span>
+                    <p class="ment white">가뿐하게. 색다르게. <br>강력하게.</p>
+                    <span class="price white">₩779,000부터</span>
                     <button class="buy">구입하기</button>
                     <a href="#" class="more-a">더 알아보기</a>
                 </div>
@@ -188,18 +188,18 @@
         </section>
         
         <section id="section-ipadpro">
-            <div class="section-ipadpro-wrapper">
+            <div class="section-ipadpro-wrapper row">
                 <a href="#" class="a-link"></a>
                 <div class="pro-img-contents">
                     <figure class="pro-img"></figure>  
                 </div>
                 <div class="pro-text-contents">
                     <!-- <div class="pro-text-contents-wrapper"> -->
-                    <h2>
+                    <h2 class="title">
                         iPad Pro
                         <span class="hidden">ipad pro</span>
                     </h2>
-                    <p>궁극의 iPad란 이런 것.</p>
+                    <p class="ment">궁극의 iPad란 이런 것.</p>
                     <span class="price">₩999,000부터</span>
                     <button class="buy">구입하기</button>
                     <a href="#" class="more-a">더 알아보기</a>
@@ -208,35 +208,45 @@
             </div>
         </section>
         
-        <section class="section-ipad">
-            <a href="#" class="a-link"></a>
-            <div class="pad-text-contents">
-                <h2>
-                    iPad
-                    <span class="hidden">ipad</span>
-                </h2>
-                <p>만족스러운 성능.<br>기분 좋은 가격.</p>
-                <span class="price">₩449,000부터</span>
-                <button class="buy">구입하기</button>
-                <a href="#" class="more-a">더 알아보기</a>
-            </div> 
-            <div class="ipad-img-contents">
-                <figure class="ipad-img"></figure>
-            </div>  
+        <section id="section-ipad">
+            <div class="section-ipad-wrapper row">
+                <a href="#" class="a-link"></a>
+                <div class="pad-text-contents">
+                    <h2 class="title">
+                        iPad
+                        <span class="hidden">ipad</span>
+                    </h2>
+                    <p class="ment">만족스러운 성능.<br>기분 좋은 가격.</p>
+                    <span class="price">₩449,000부터</span>
+                    <button class="buy">구입하기</button>
+                    <a href="#" class="more-a">더 알아보기</a>
+                </div> 
+                <div class="ipad-img-contents">
+                    <figure class="ipad-img"></figure>
+                </div>  
+            </div>
         </section>
        
-        <section class="section-ipad-mini">
-            <a href="#" class="a-link"></a>
-            <!-- z-index이용해서 a에 1 주고 text-contents엔 2줘서 (2가 더 앞)더 앞으로해서 선택 안되게끔 -->
-            <!-- z-index 안되면 relative해야함 -->
-            <div class="mini-text-contents">
-                <h2>iPad<figure class="text-mini"></figure></h2>
-                <p>메가급 성능.<br>크기만 미니.</p>
-                <span class="price">₩649,000부터</span>
-                <button class="buy">구입하기</button>
-                <a href="#" class="more-a">더 알아보기</a>
-            </div> 
-            <figure class="mini-img"></figure>  
+        <section id="section-ipad-mini">
+            <div class="section-ipad-mini-wrapper row">
+                <a href="#" class="a-link"></a>
+                <!-- z-index이용해서 a에 1 주고 text-contents엔 2줘서 (2가 더 앞)더 앞으로해서 선택 안되게끔 -->
+                <!-- z-index 안되면 relative해야함 -->
+                <div class="mini-img-contents">
+                    <figure class="mini-img"></figure>
+                </div>  
+                <div class="mini-text-contents">
+                    <h2 class="title">
+                        iPad
+                        <figure class="text-mini"></figure>
+                        <span class="hidden">ipad mini</span>
+                    </h2>
+                    <p class="ment">메가급 성능.<br>크기만 미니.</p>
+                    <span class="price">₩649,000부터</span>
+                    <button class="buy">구입하기</button>
+                    <a href="#" class="more-a">더 알아보기</a>
+                </div> 
+            </div>
         </section>
 
         <section class="ipad-grid">
@@ -263,7 +273,7 @@
                 </p>
                 <span>₩779,000부터</span>
                 <button>구입하기</button>
-                <a href="#">더 알아보기 &gt;</a>
+                <a href="#" class="more-a">더 알아보기</a>
             </div>
             <div class="recommand-ipads">
                 <figure class="recommand-ipad-img"></figure>
@@ -275,7 +285,7 @@
                 </p>
                 <span>₩449,000부터</span>
                 <button>구입하기</button>
-                <a href="#">더 알아보기 &gt;</a>
+                <a href="#" class="more-a">더 알아보기</a>
             </div>
             <div class="recommand-ipad-mini">
                 <figure class="recommand-ipad-mini-img"></figure>
@@ -287,7 +297,7 @@
                 </p>
                 <span>₩649,000부터</span>
                 <button>구입하기</button>
-                <a href="#">더 알아보기 &gt;</a>
+                <a href="#" class="more-a">더 알아보기</a>
             </div>
             <div class="inch">
                 <h4>12.9 및 11</h4>

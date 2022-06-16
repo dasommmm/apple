@@ -423,30 +423,25 @@ main{
     background-color: var(--back-gray);
 }
 
-.section-ipadair{
+#section-ipadair{
     background-color: black;
     padding-top: 68px;
     padding-bottom: 66px;
     position: relative;
-    margin-bottom: 13px;
     overflow: hidden;
+    margin-bottom: 13px;
+    /* 회색 보이게 해주기 */
 }
 
-.section-ipadair-wrapper{
-    /* width: 100%; */
-    display: flex;
-    /* flex-direction: row; */
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* margin0auto 했으니까 위에 마진 없어도 됨 */
+.row{
     width: 980px;
     margin: 0 auto;
-    /* box-sizing: border-box; */
-    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* alingitems center안해주면 위에 여백 선택 안됨 */
 }
+
 
 .a-link{
     position: absolute;
@@ -465,8 +460,8 @@ main{
     justify-content: center;
     flex-shrink: 0;
     align-items: center;
-    width: 245px;
-    height: 260px;
+    /* width: 245px;
+    height: 260px; */
     /* text-align: center; */
     /* flex해야할지,, ??? */
     z-index: 2;
@@ -476,23 +471,29 @@ main{
 
 .price{
     font-size: 17PX;
-    color: #ffffff;
+    color: black;
     margin-top: 17px;
 
 }
 
-.air-text-contents h2{
+
+.title{
     font-size: 56px;
-    color: #ffffff;
+    color: black;
+    font-weight: 600;
 }
 
-.air-text-contents p:nth-of-type(2){
+.ment{
     font-size: 21px;
     font-weight: 600;
-    color: #ffffff;
     text-align: center;
     line-height:1.3;
     margin-top: 8px;
+    color: black;
+}
+
+.air-text-contents .white{
+    color: #ffffff;
 }
 
 .buy{
@@ -643,30 +644,28 @@ main{
     .air-text-contents h2{
         font-size: 40px;
     }
+    .section-ipadair-wrapper{
+        justify-content: center;
+    }
 }
 
 #section-ipadpro{
-    margin-top: 10px;
+    margin-bottom: 13px;
     background-color: white;
     position: relative;
     overflow: hidden;
     /* hidden사진 안삐져나오게 */
     /* a태그에 absolute줘서 부모인 여기에 relative */
-}
-
-.section-ipadpro-wrapper{
-    display: flex;
     padding-top: 78px;
     padding-bottom: 71px;
-    width: 980px;
-    margin: 0 auto;
 }
+
 
 .pro-text-contents{
     flex-basis: 26%;
     max-width: 26%;
     margin-top: -125px;
-    overflow: hidden;
+    /* overflow: hidden; */
     line-height: 1.3;
     letter-spacing: -0.03em;
     /* text-align: center; */
@@ -676,11 +675,9 @@ main{
     align-items: center;
     /* 위에 이상한 여백 생겨요ㅜㅜ 마진탑ㅜㅜ */
     z-index: 2;
+    flex-shrink: 0;
 }
 
-/* .pro-text-contents-wrapper{
-    
-} */
 
 
 
@@ -691,10 +688,6 @@ main{
     
 }
 
-.pro-text-contents p:first-of-type{
-    font-size: 21px;
-    font-weight: 600;
-}
 
 .pro-text-contents .price{
     color: black;
@@ -746,14 +739,119 @@ main{
 }
 
 @media screen and (max-width:734px) {
-    .section-ipadair-wrapper
+    .section-ipadpro-wrapper{
+        max-width: 320px;
+        margin: 0 auto;
+        width: 87.5%;
+    }
+    .pro-text-contents{
+        order: -1;
+        margin: 0 auto;
+        z-index: 2;
+        margin-top: 0;
+        max-width: 100%;
+        flex-basis: 70%;
+        flex-shrink: 0;
+        /* 완전 모르겠음,,,,ㅜㅜ */
+    }
+    .pro-text-contents h2{
+        font-size: 40px;
+       
+    }
+    .pro-img-contents{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .pro-img{
+        background-image: url(../apple-img/ipad_pro_hero__bh3eq6sqfjw2_small.jpg);
+        width: 540px;
+        height: 268px;
+        background-size: 540px 268px;
+        background-repeat: no-repeat;
+        margin-left: 0;
+    }
+}
+/* 위에 반응형 마지막꺼 전체적으로 부탁드려요,, */
+
+
+/* 언더에 스크롤바 안생기게 못하나요
+완전 줄였을때 위아래 다르고 이상해요!ㅜㅜ반응형😂😊😊🤣😂 */
+
+#section-ipad{
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 13px;
+    
 }
 
 
-/* 언더에 스크롤바 안생기게 못하나요 */
+.pad-text-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
+    flex-basis: 33%;
+    max-width: 33%;
+}
 
+.ipad-img-contents{
+    flex-basis: 66%;
+    max-width: 66%;
 
+}
 
+.ipad-img{
+    background-image: url(../apple-img/ipad_10_2__7yowwyyrbmaa_large.jpg);
+    background-size: 856px 815px;
+    width: 856px;
+    height: 813px;
+    position: relative;
+    left: 50%;
+    margin-left: -350px;
+    margin-top: -98px;
+}
+
+/* 💕😂😁😉여기에 패드 반응형해야함!!🐱‍🚀✔🎂😎🤳🐱‍👤🤳🍠🍠🥩🧔👩‍🦳 */
+
+#section-ipad-mini{
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    padding-top: 120px;
+    margin-bottom: 13px;
+}
+
+.mini-img-contents{
+    background-image: url(../apple-img/ipad_mini__dn6g8b0hw8om_large.jpg);
+    width: 503px;
+    height: 579px;
+    background-size: 503px 579px;
+    background-repeat: no-repeat;
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.mini-text-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.text-mini{
+    background-image: url(../apple-img/mini_script__bjahejz6luqa_large.png);
+    width: 103px;
+    height: 41px;
+    background-size: 103px 41px;
+    background-repeat: no-repeat;
+    display: inline-block;
+
+}
 
 
 

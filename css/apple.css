@@ -640,12 +640,19 @@ main{
     }
     .air-text-contents{
         margin-top: 0;
+        flex-basis: 100%;
+        max-width: 100%;
+        /* 얘네도 백 줘서 크기 늘려줌 */
     }
     .air-text-contents h2{
         font-size: 40px;
     }
     .section-ipadair-wrapper{
+        width: 320px;
+        /* 320줘서 줄어들지않게 고정 */
         justify-content: center;
+        flex-direction: column;
+        /* 줄였을때 밑으로  가게 */
     }
 }
 
@@ -740,9 +747,9 @@ main{
 
 @media screen and (max-width:734px) {
     .section-ipadpro-wrapper{
-        max-width: 320px;
+        width: 320px;
         margin: 0 auto;
-        width: 87.5%;
+        /* width: 87.5%; */
     }
     .pro-text-contents{
         order: -1;
@@ -841,6 +848,7 @@ main{
     align-items: center;
     flex-basis: 25%;
     max-width: 25%;
+    z-index: 2;
 }
 
 .text-mini{
@@ -853,6 +861,38 @@ main{
 
 }
 
+/* 😊😊😊😊😊❤❤❤❤❤미니 반응형 해조! */
 
+#ipad-grid{
+    width: auto;
+    box-sizing: border-box;
+}
+
+.tip{
+    padding: 0 30px;
+}
+/* 섹션에 크기 맥스1440 섹션엔 컬러 없음 패딩 tip에 화이트, width100% 패딩투명 섹션에 주고 */
+.grid-wrapper{
+    margin: 0 auto;
+    background-color: white;
+    max-width: 1440px;
+    padding-bottom: 105px;
+}
+
+#ipad-grid h2{
+    padding-top: 115px;
+    margin: 0 auto;
+    background-color: white;
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 1440px;
+}
+
+footer{
+    background-color: var(--back-gray);
+    padding-top: 30px;
+    /* 패딩은 색 들어감 마진 안들어감 */
+}
 
 

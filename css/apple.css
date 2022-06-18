@@ -864,17 +864,19 @@ main{
 /* 😊😊😊😊😊❤❤❤❤❤미니 반응형 해조! */
 
 #ipad-grid{
-    width: auto;
+    width: 100%;
     box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
 .tip{
-    padding: 0 30px;
+    background-color: white;
 }
 /* 섹션에 크기 맥스1440 섹션엔 컬러 없음 패딩 tip에 화이트, width100% 패딩투명 섹션에 주고 */
 .grid-wrapper{
     margin: 0 auto;
-    background-color: white;
     max-width: 1440px;
     padding-bottom: 105px;
 }

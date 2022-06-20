@@ -758,7 +758,8 @@ body{
         z-index: 2;
         margin-top: 0;
         max-width: 100%;
-        flex-basis: 70%;
+        flex-basis: 100%;
+        /* 왜 70했는지? 100으로하면 됨 */
         flex-shrink: 0;
         /* 완전 모르겠음,,,,ㅜㅜ */
     }

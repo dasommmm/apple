@@ -1,3 +1,4 @@
+
 /* 이미지 css 파일을 따로 만드는 방법도 있음 직관적으로 가능 */
 :root{
     --header-background:rgba(0,0,0,0.8);
@@ -216,7 +217,6 @@ header ul{
 /* .pc-hide a:hover::after{
     opacity: 1;
 }
-
 .pc-hide a:hover::before{
     opacity: 1;
 } */
@@ -231,18 +231,6 @@ header ul{
 }
 
 /* 이거 맞나요ㅜ hover */
-
-@media screen and (max-width:833px){
-    .pc-hide{
-        display: block;
-    }
-    .mobile-hide{
-        display: none;
-    }
-    header,header ul{
-        height: 48px;
-    }
-}
 
 
 
@@ -575,87 +563,6 @@ body{
     
 }
 
-@media screen and (max-width:1068px) {
-    .section-ipadair{
-        padding-top: 45px;
-        padding-bottom: 45px;
-    }
-    .section-ipadair-wrapper{
-        width: 692px;
-        /* width해줘야해 */
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .air-text-contents{
-       flex-basis: 30%;
-       max-width: 30%;
-    }
-    .air-img-contents{
-        flex-basis: 70%;
-        max-width: 70%;
-    }
-    .air-img{
-        background-image: url(../apple-img/ipad_air__d794tkovmk02_medium.jpg);
-        width: 504px;
-        height: 515px;
-        background-size: 504px 515px;
-        background-repeat: no-repeat;
-       
-    
-    }
-    .text-air{
-        background-image: url(../apple-img/air_script__coyet2g7gkia_medium.png);
-        width: 74px;
-        height: 40px;
-        background-size: 74px 40px;
-        background-repeat: no-repeat;
-    
-    }
-}
-
-@media screen and (max-width:734px) {
-    .section-ipadair{
-        padding-top: 36px;
-        padding-bottom: 36px;
-    }
-    .air-img-contents{
-        flex-basis: 100%;
-        max-width: 100%;
-    }
-    .air-img{
-        background-image: url(../apple-img/ipad_air__d794tkovmk02_small.jpg);
-        width: 310px;
-        height: 317px;
-        background-size: 310px 317px;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-        margin-top: 50px;
-        /* 아이폰과 박스 모양 다름  ㅠㅠ 같이 해줄라면??*/
-    }
-    .text-air{
-        background-image: url(../apple-img/air_script__coyet2g7gkia_small.png);
-        width: 60px;
-        height: 32px;
-        background-size: 60px 32px;
-        background-repeat: no-repeat;
-    }
-    .air-text-contents{
-        margin-top: 0;
-        flex-basis: 100%;
-        max-width: 100%;
-        /* 얘네도 백 줘서 크기 늘려줌 */
-    }
-    .air-text-contents h2{
-        font-size: 40px;
-    }
-    .section-ipadair-wrapper{
-        width: 320px;
-        /* 320줘서 줄어들지않게 고정 */
-        justify-content: center;
-        flex-direction: column;
-        /* 줄였을때 밑으로  가게 */
-    }
-}
 
 #section-ipadpro{
     margin-bottom: 13px;
@@ -721,65 +628,8 @@ body{
     margin-left: 30%;
 }
 
-@media screen and (max-width:1068px) {
-    .pro-img-contents{
-        max-width: 33%;
-        flex-basis: 33%;
-    }
-    .pro-img{
-        background-image: url(../apple-img/ipad_pro_hero__bh3eq6sqfjw2_medium.jpg);
-        width: 831px;
-        height: 430px;
-        background-size: 831px 430px;
-        background-repeat: no-repeat;
-    }
-    .section-ipadpro-wrapper{
-        width: 692px;
-        margin: 0 auto;
-    }
-    .pro-text-contents{
-        /* display: flex;
-        align-items: center;
-        justify-content: center; */
-        max-width: 33%;
-        flex-basis: 33%;
-    }
-}
 
-@media screen and (max-width:734px) {
-    .section-ipadpro-wrapper{
-        width: 320px;
-        margin: 0 auto;
-        /* width: 87.5%; */
-    }
-    .pro-text-contents{
-        order: -1;
-        margin: 0 auto;
-        z-index: 2;
-        margin-top: 0;
-        max-width: 100%;
-        flex-basis: 100%;
-        /* 왜 70했는지? 100으로하면 됨 */
-        flex-shrink: 0;
-        /* 완전 모르겠음,,,,ㅜㅜ */
-    }
-    .pro-text-contents h2{
-        font-size: 40px;
-       
-    }
-    .pro-img-contents{
-        flex-basis: 100%;
-        max-width: 100%;
-    }
-    .pro-img{
-        background-image: url(../apple-img/ipad_pro_hero__bh3eq6sqfjw2_small.jpg);
-        width: 540px;
-        height: 268px;
-        background-size: 540px 268px;
-        background-repeat: no-repeat;
-        margin-left: 0;
-    }
-}
+ 
 /* 위에 반응형 마지막꺼 전체적으로 부탁드려요,, */
 
 
@@ -1387,13 +1237,70 @@ footer{
     font-weight: 500;
 }
 
-@media screen and (max-width: 1068px){
+@media screen and (max-width:1068px) {
+    .section-ipadair{
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    .section-ipadair-wrapper{
+        width: 692px;
+        /* width해줘야해 */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .air-text-contents{
+       flex-basis: 30%;
+       max-width: 30%;
+    }
+    .air-img-contents{
+        flex-basis: 70%;
+        max-width: 70%;
+    }
+    .air-img{
+        background-image: url(../apple-img/ipad_air__d794tkovmk02_medium.jpg);
+        width: 504px;
+        height: 515px;
+        background-size: 504px 515px;
+        background-repeat: no-repeat;
+    }
+    .text-air{
+        background-image: url(../apple-img/air_script__coyet2g7gkia_medium.png);
+        width: 74px;
+        height: 40px;
+        background-size: 74px 40px;
+        background-repeat: no-repeat;
+    
+    }
+    .pro-img-contents{
+        max-width: 33%;
+        flex-basis: 33%;
+    }
+    .pro-img{
+        background-image: url(../apple-img/ipad_pro_hero__bh3eq6sqfjw2_medium.jpg);
+        width: 831px;
+        height: 430px;
+        background-size: 831px 430px;
+        background-repeat: no-repeat;
+    }
+    .section-ipadpro-wrapper{
+        width: 692px;
+        margin: 0 auto;
+    }
+    .pro-text-contents{
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        max-width: 40%;
+        flex-basis: 40%;
+    }
+
     #ipad-grid{
         margin: 20px auto;
         width: auto;
         max-width: 776px;
     }
     .tip{
+        box-sizing: border-box;
         padding: 0 20px;
         padding-top: 108px;
         padding-bottom: 92px;
@@ -1428,5 +1335,156 @@ footer{
         "cell-pad cell-mini"
         "pen-pad pen-mini"
         "magic-pad magic-mini";
+    }
+}
+
+
+@media screen and (max-width:833px){
+    .pc-hide{
+        display: block;
+    }
+    .mobile-hide{
+        display: none;
+    }
+    header,header ul{
+        height: 48px;
+    }
+}
+
+@media screen and (max-width:734px) {
+    .section-ipadair{
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+    .air-img-contents{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .air-img{
+        background-image: url(../apple-img/ipad_air__d794tkovmk02_small.jpg);
+        width: 310px;
+        height: 317px;
+        background-size: 310px 317px;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        margin-top: 50px;
+        /* 아이폰과 박스 모양 다름  ㅠㅠ 같이 해줄라면??*/
+    }
+    .text-air{
+        background-image: url(../apple-img/air_script__coyet2g7gkia_small.png);
+        width: 60px;
+        height: 32px;
+        background-size: 60px 32px;
+        background-repeat: no-repeat;
+    }
+    .air-text-contents{
+        margin-top: 0;
+        flex-basis: 100%;
+        max-width: 100%;
+        /* 얘네도 백 줘서 크기 늘려줌 */
+    }
+    .air-text-contents h2{
+        font-size: 40px;
+    }
+    .section-ipadair-wrapper{
+        width: 320px;
+        /* 320줘서 줄어들지않게 고정 */
+        justify-content: center;
+        flex-direction: column;
+        /* 줄였을때 밑으로  가게 */
+    }
+    .section-ipadpro-wrapper{
+        width: 320px;
+        margin: 0 auto;
+        /* width: 87.5%; */
+    }
+    .pro-text-contents{
+        order: -1;
+        margin: 0 auto;
+        z-index: 2;
+        margin-top: 0;
+        max-width: 100%;
+        flex-basis: 100%;
+        flex-shrink: 0;
+        /* 완전 모르겠음,,,,ㅜㅜ */
+    }
+    .pro-text-contents h2{
+        font-size: 40px;
+       
+    }
+    .pro-img-contents{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .pro-img{
+        background-image: url(../apple-img/ipad_pro_hero__bh3eq6sqfjw2_small.jpg);
+        width: 540px;
+        height: 268px;
+        background-size: 540px 268px;
+        background-repeat: no-repeat;
+        margin-left: 0;
+    }
+    #ipad-grid{
+        padding: 0;
+    }
+    .tip{
+        padding-left: 0;
+        padding-right: 0;
+        min-width: 380px;
+    }
+    .grid-wrapper{
+        margin-left: auto;
+        margin-right: auto;
+        width: 87.5%;
+        margin-top: 46px;
+        margin-bottom: 34px;
+        grid-column-gap: 10px;
+        grid-row-gap: 34px;
+    }
+    .recommand-ipad-pro-img{
+        width: 125px;
+        height: 141px;
+        background-size: 125px 141px;
+        background-repeat: no-repeat;
+        background-image: url(../apple-img/compare_ipad_pro__erf9x8mw04sy_small.png);
+    }
+    .recommand-ipad-air-img{
+        width: 91px;
+        height: 125px;
+        background-size: 91px 125px;
+        background-repeat: no-repeat;
+        background-image: url(../apple-img/compare_ipad_air__bxjv33pk6nte_small.png);
+    }
+    .recommand-ipad-img{
+        width: 88px;
+        height: 127px;
+        background-size: 88px 127px;
+        background-repeat: no-repeat;
+        background-image: url(../apple-img/compare_ipad_10_2__fwgwy7jydtea_small.png);
+    }
+    .recommand-ipad-mini-img{
+        width: 74px;
+        height: 107px;
+        background-size: 74px 107px;
+        background-repeat: no-repeat;
+    }
+    .compare-link{
+        flex-direction: column;
+    }
+    .compare-link a{
+        margin-bottom: 10px;
+        font-size: 19px;
+    }
+    .apple-pencil{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+        
+    }
+    .apple-pencil p{
+        max-width: 140px;
+        /* p 자체에 크기를 줘서 글씨를 밑으로 내려오게! 텍스트 감싸는 
+        크기가 작아져서 글씨가 내려온것임 */
     }
 }

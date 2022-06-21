@@ -912,12 +912,6 @@ body{
     max-width: 1440px;
 }
 
-footer{
-    background-color: var(--back-gray);
-    padding-top: 30px;
-    /* 패딩은 색 들어감 마진 안들어감 */
-}
-
 .recommand-ipad-pro-img{
     background-image: url(../apple-img/compare_ipad_pro__erf9x8mw04sy_large.png);
     width: 189px;
@@ -1487,4 +1481,55 @@ footer{
         /* p 자체에 크기를 줘서 글씨를 밑으로 내려오게! 텍스트 감싸는 
         크기가 작아져서 글씨가 내려온것임 */
     }
+}
+
+
+footer{
+    background-color: var(--back-gray);
+    padding-top: 30px;
+    /* 패딩은 색 들어감 마진 안들어감 */
+    padding-bottom: 9.6px;
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    
+}
+
+.explain,ol{
+    color: #6e6e73;;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    
+}
+
+footer ol{
+    padding: 0 17px;
+    border-bottom: 1px solid #d2d2d7;
+    list-style: decimal;
+}
+
+footer li{
+    padding-bottom: 0.8em;
+}
+
+footer a{
+    /* width: 14px; */
+    /* a display flex, 안에 figure에 inline-block */
+}
+
+.logo-black{
+    width: 14px;
+    height: 72px;
+    background-size: 14px 72px;
+    background-repeat: no-repeat;
+    background-image: url(../apple-img/icon_large.svg);
+    height: 18px;
+    display: inline-block;
+    z-index: 2;
+}
+
+footer-logo{
+    display: flex;
+    flex-direction: row;
 }

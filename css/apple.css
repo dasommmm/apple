@@ -1514,8 +1514,13 @@ footer li{
 }
 
 footer a{
-    /* width: 14px; */
-    /* a display flex, 안에 figure에 inline-block */
+    /* 한줄로 선택되는거 a를 블록으로 해줘서 그런거 a의 부모 div display flex, 안에 figure에 inline-block */
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: row;
+    padding: 17px 0;
 }
 
 .logo-black{
@@ -1525,11 +1530,81 @@ footer a{
     background-repeat: no-repeat;
     background-image: url(../apple-img/icon_large.svg);
     height: 18px;
-    display: inline-block;
     z-index: 2;
+    margin-right: 5px;
 }
 
-footer-logo{
+/* before 첫번째 자식요소가 된다는 말 */
+.footer-logo p::before{
+    /* 원래 기존 apple에서는 p가 아닌 li로 해줌 다른페이지로 가면 
+    뒤에 뭐가 생기는 모양이라서!*/
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-color: #6e6e73;
+    border-style: solid;
+    border-width: 0px;
+    border-top-width: 1.9px;
+    border-right-width: 1.9px;
+    transform: rotate(45deg);
+    margin-right: 11px;
+
+}
+
+.footer-logo p{
+    color:#424245;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+nav{
     display: flex;
-    flex-direction: row;
+    font-size: 12px;
+}
+
+nav h3{
+    color: #1d1d1f;
+    font-weight: 600;
+    padding-bottom: 9px;
+}
+
+nav a{
+    color: #424245;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul{
+    padding-bottom: 24px;
+}
+
+.shopping-nav{
+    flex-basis: 25%;
+}
+
+.service-nav{
+    flex-basis: 25%;
+}
+
+.applestore-nav{
+    flex-basis: 25%;
+}
+
+.business-nav{
+    flex-basis: 25%;
+}
+
+.value{
+    flex-basis: 25%;
+}
+
+.more{
+    color: #6e6e73;
+    font-size: 12px;
+}
+
+.accent{
+    display: inline-block;
+    color: #06c;
+    padding-top: 30px;
 }

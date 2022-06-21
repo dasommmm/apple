@@ -1492,7 +1492,7 @@ footer{
     margin: 0 auto;
     max-width: 980px;
     padding: 0 22px;
-    
+    font-weight: 400;
 }
 
 .explain,ol{
@@ -1574,6 +1574,10 @@ nav a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+nav a:hover{
+    text-decoration: underline;
+}
+
 nav ul{
     padding-bottom: 24px;
 }
@@ -1598,13 +1602,66 @@ nav ul{
     flex-basis: 25%;
 }
 
-.more{
+.recell{
     color: #6e6e73;
     font-size: 12px;
+    border-bottom: 1px solid #d2d2d7;
+    margin-bottom: 8px;
+}
+
+.recell p{
+    padding-bottom: 8px;
 }
 
 .accent{
     display: inline-block;
     color: #06c;
     padding-top: 30px;
+}
+
+.accent:hover{
+    text-decoration: underline;
+}
+
+
+.more-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.more{
+    display: flex;
+    color: #6e6e73;
+    font-size: 12px;
+}
+
+.more p{
+    margin-right: 30px;
+}
+
+.small-nav{
+    display: flex;
+
+}
+
+.small-nav a{
+    color: #424245;
+}
+
+.korea{
+    font-size: 12px;
+    color: #424245;
+}
+
+.number span{
+    color: #999;
+    font-size: 11px;
+    letter-spacing: -0.04em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Arial, Helvetica, sans-serif;
+}
+
+.number{
+    margin-bottom: 20px;
+    
 }

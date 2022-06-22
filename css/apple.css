@@ -1343,30 +1343,35 @@ body{
     header,header ul{
         height: 48px;
     }
-    nav{
+    .footer-nav{
         flex-direction: column;
     }
-    nav label{
+    .footer-nav input{
+        display: none;
+    }
+    .footer-nav label{
         z-index: 2;
         position: relative;
-        width: 100%;
+        /* width: 100%; */
+        /* display: block; */
+        overflow: hidden;
     }
-    nav ul{
-        transform: translateY(-200px);
+    .footer-nav ul{
+        transform: translateY(-100px);
         position: absolute;
         z-index: -1;
         visibility: hidden;
     }
-    nav > input:checked + ul{
+    div > input:checked + ul{
         transition: 0.5s;
         transform: none;
         visibility: visible;
         position: static;
     }
-    nav div{
+    .footer-nav div{
         overflow: hidden;
     }
-    nav a{
+    .footer-nav a{
         display: inline-block;
     }
 }
@@ -1584,16 +1589,21 @@ footer a{
     margin-top: 4px;
 }
 
-nav{
+.footer-nav{
     display: flex;
     font-size: 12px;
 }
 
-nav input{
+.footer-nav div{
+    overflow: hidden;
+
+}
+
+.footer-nav input{
     display: none;
 } 
 
-nav label{
+.footer-nav label{
     /* label 인라인이라 패딩 안됨 블록처리해줌 */
     display: block;
     color: #1d1d1f;
@@ -1601,16 +1611,16 @@ nav label{
     padding-bottom: 9px;
 }
 
-nav a{
+.footer-nav a{
     color: #424245;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav a:hover{
+.footer-nav a:hover{
     text-decoration: underline;
 }
 
-nav ul{
+.footer-nav ul{
     padding-bottom: 24px;
 }
 

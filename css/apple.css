@@ -1343,6 +1343,32 @@ body{
     header,header ul{
         height: 48px;
     }
+    nav{
+        flex-direction: column;
+    }
+    nav label{
+        z-index: 2;
+        position: relative;
+        width: 100%;
+    }
+    nav ul{
+        transform: translateY(-200px);
+        position: absolute;
+        z-index: -1;
+        visibility: hidden;
+    }
+    nav > input:checked + ul{
+        transition: 0.5s;
+        transform: none;
+        visibility: visible;
+        position: static;
+    }
+    nav div{
+        overflow: hidden;
+    }
+    nav a{
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width:734px) {
@@ -1563,7 +1589,13 @@ nav{
     font-size: 12px;
 }
 
-nav h3{
+nav input{
+    display: none;
+} 
+
+nav label{
+    /* label 인라인이라 패딩 안됨 블록처리해줌 */
+    display: block;
     color: #1d1d1f;
     font-weight: 600;
     padding-bottom: 9px;
@@ -1581,6 +1613,7 @@ nav a:hover{
 nav ul{
     padding-bottom: 24px;
 }
+
 
 .shopping-nav{
     flex-basis: 25%;
@@ -1647,6 +1680,11 @@ nav ul{
 
 .small-nav a{
     color: #424245;
+    /* display: inline-block; */
+    word-wrap: break-word;
+    /* word-break: keep-all; */
+    white-space: nowrap;
+    /* 이부분 질문!!!!!!!!! */
 }
 
 .korea{
